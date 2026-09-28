@@ -1,0 +1,39 @@
+NetWatch - Crontab line and scheduled-run evidence
+====================================================
+
+STATUS: PLACEHOLDER - this file must be completed by the group on a real
+Linux machine before submission. Crontab/cron are not available in the
+build/test sandbox this file skeleton was assembled in.
+
+The crontab line (runs netwatch.sh once every hour, redirecting all
+output - including the on-screen report table, which is printed directly
+and is NOT captured by logs/netwatch.log on its own - to a dedicated
+cron log so there is a complete record of each scheduled run):
+
+    0 * * * * /absolute/path/to/ShellScript/netwatch.sh >> /absolute/path/to/ShellScript/logs/cron.log 2>&1
+
+Replace /absolute/path/to/ with the real absolute path on the machine
+you install this on (find it with `pwd` inside ShellScript/).
+
+How to capture real evidence of one scheduled run:
+
+1. Install the line above with `crontab -e` (paste it as a new line,
+   save and exit).
+2. Confirm it is installed: `crontab -l` (screenshot this).
+3. Wait for the top of the next hour (or temporarily change the schedule
+   to `* * * * *` to trigger it within a minute for testing purposes,
+   then change it back to `0 * * * *` once you have your evidence -
+   note this in your report if you do it this way).
+4. Confirm the job actually ran via the system's own cron log, e.g.:
+     grep CRON /var/log/syslog | tail -5
+   or:
+     journalctl -u cron --since "10 minutes ago"
+   (screenshot this - it is independent proof from cron's own logging,
+   not just from netwatch.sh's log)
+5. Confirm netwatch.sh's own evidence of that run:
+     tail -30 ShellScript/logs/cron.log
+     tail -10 ShellScript/data/history.csv
+   (screenshot both - timestamps should match the scheduled time)
+
+Paste your screenshots into this file (or reference their filenames in
+Evidence/screenshots/) and remove this STATUS line once done.

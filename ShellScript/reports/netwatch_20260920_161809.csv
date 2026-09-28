@@ -1,0 +1,7 @@
+timestamp,hostname,ip_address,total_checks,up_count,down_count,availability_pct,service_state,service_rtt_ms
+2026-09-20 16:18:09,backup-node,127.0.0.2,2,2,0,100.0,closed,0.02
+2026-09-20 16:18:09,deadservice,127.0.0.1,2,2,0,100.0,closed,0.03
+2026-09-20 16:18:09,warehouse-app,127.0.0.1,2,2,0,100.0,open,0.04
+2026-09-20 16:18:09,ghost-host,192.0.2.55,2,0,2,0.0,error,866.86
+2026-09-20 16:18:09,intranet,127.0.0.1,2,2,0,100.0,open,0.2
+2026-09-20 16:18:09,fileserver,127.0.0.1,2,2,0,100.0,open,0.22
