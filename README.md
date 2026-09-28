@@ -8,11 +8,11 @@
 
 | Requirement area | Owner(s) | Approx. share |
 |---|---|---|
-| Part A - Shell Script (FR-S01-S05) | [FILL IN] | [FILL IN] |
-| Part B - Python (FR-P01-P07) | [FILL IN] | [FILL IN] |
-| Integration (INT-01-03) | [FILL IN] | [FILL IN] |
-| Testing, debugging evidence | [FILL IN] | [FILL IN] |
-| Report, diagrams, documentation | [FILL IN] | [FILL IN] |
+| Part A - Shell Script (FR-S01-S05) | H R C D Samaranayake | 33.3% |
+| Part B - Python (FR-P01-P07) | S P D Samarakkodi | 33.3% |
+| Integration (INT-01-03) | H R C D Samaranayake, S P D Samarakkodi | 50% | 50% |
+| Testing, debugging evidence | G A Himakelum, H R C D Samaranayake | 50% | 50% |
+| Report, diagrams, documentation | G A Himakelum | 50% |
 
 ---
 
