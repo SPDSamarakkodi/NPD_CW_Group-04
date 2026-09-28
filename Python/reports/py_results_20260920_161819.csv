@@ -1,0 +1,7 @@
+timestamp,hostname,ip_address,service,port,state,response_time_ms,error_detail
+2026-09-20 16:18:19,intranet,127.0.0.1,http,8091,open,0.16,
+2026-09-20 16:18:19,warehouse-app,127.0.0.1,wms,8092,open,0.03,
+2026-09-20 16:18:19,fileserver,127.0.0.1,http,8093,open,0.03,
+2026-09-20 16:18:19,deadservice,127.0.0.1,http,8099,closed,0.03,Connection actively refused
+2026-09-20 16:18:19,backup-node,127.0.0.2,http,8094,closed,0.02,Connection actively refused
+2026-09-20 16:18:19,ghost-host,192.0.2.55,http,80,error,1051.04,No route to host (errno 113)

@@ -1,0 +1,7 @@
+timestamp,hostname,ip_address,service,port,state,response_time_ms,error_detail
+2026-09-20 16:18:08,intranet,127.0.0.1,http,8091,open,0.18,
+2026-09-20 16:18:08,warehouse-app,127.0.0.1,wms,8092,open,0.18,
+2026-09-20 16:18:08,fileserver,127.0.0.1,http,8093,open,0.52,
+2026-09-20 16:18:08,deadservice,127.0.0.1,http,8099,closed,0.03,Connection actively refused
+2026-09-20 16:18:08,backup-node,127.0.0.2,http,8094,closed,0.02,Connection actively refused
+2026-09-20 16:18:08,ghost-host,192.0.2.55,http,80,timeout,2002.52,No response within 2s (errno 11)

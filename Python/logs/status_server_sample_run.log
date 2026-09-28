@@ -1,0 +1,4 @@
+[INFO] NetWatch status server listening on http://127.0.0.1:8100/
+[INFO] Serving results from: /home/claude/netwatch/G_NPD_CW/Python/data/results.json
+[INFO] Press Ctrl+C to stop.
+[2026-09-20 16:18:20] [INFO] Request served: 127.0.0.1 - "GET / HTTP/1.1" 200 -
