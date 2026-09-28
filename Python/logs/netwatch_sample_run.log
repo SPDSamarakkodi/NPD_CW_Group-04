@@ -1,0 +1,60 @@
+[INFO] NetWatch (Python) starting - inventory: ../ShellScript/config/inventory.csv
+[INFO] mode=both timeout=2s
+[INFO] Line 8: skipped (blank line)
+[ERROR] Line 9: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 3
+[ERROR] Line 10: rejected - field 'port' ('8O80') is not an integer in 1-65535
+[ERROR] Line 11: rejected - field 'port' ('99999') is not an integer in 1-65535
+[ERROR] Line 12: rejected - field 'ip_address' ('192.168.1.256') is not a valid IPv4 address
+[ERROR] Line 13: rejected - field 'hostname' is empty or invalid
+[ERROR] Line 14: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 6
+[INFO] Inventory validation complete: 6 valid row(s), 7 rejected row(s)
+[INFO]   -> intranet (127.0.0.1:8091, http, critical=True)
+[INFO]   -> warehouse-app (127.0.0.1:8092, wms, critical=True)
+[INFO]   -> fileserver (127.0.0.1:8093, http, critical=False)
+[INFO]   -> deadservice (127.0.0.1:8099, http, critical=False)
+[INFO]   -> backup-node (127.0.0.2:8094, http, critical=False)
+[INFO]   -> ghost-host (192.0.2.55:80, http, critical=False)
+[INFO] Sequential scan: 6 target(s) in 2.003s
+[INFO] Concurrent scan: 6 target(s) in 1.053s
+[INFO] Sequential and concurrent results match (same open/closed determination per host).
+[INFO] Speed-up (sequential / concurrent): 1.90x
+[INFO]   intranet        127.0.0.1:8091   state=open     rtt=0.16ms
+[INFO]   warehouse-app   127.0.0.1:8092   state=open     rtt=0.03ms
+[INFO]   fileserver      127.0.0.1:8093   state=open     rtt=0.03ms
+[INFO]   deadservice     127.0.0.1:8099   state=closed   rtt=0.03ms (Connection actively refused)
+[INFO]   backup-node     127.0.0.2:8094   state=closed   rtt=0.02ms (Connection actively refused)
+[INFO]   ghost-host      192.0.2.55:80     state=error    rtt=1051.04ms (No route to host (errno 113))
+[INFO] Report written: /home/claude/netwatch/G_NPD_CW/Python/reports/py_results_20260920_161819.csv
+[INFO] Change detection (vs previous run):
+[INFO]   Newly opened : none
+[INFO]   Newly closed : none
+[INFO]   Unchanged    : 6 address:port pair(s)
+
+============================================================
+NetWatch (Python) - Run Summary
+============================================================
+Total checks:       6
+  open:             3
+  closed:           2
+  timeout:          0
+  error:            1
+
+Host            Address:Port          State     RTT (ms)  
+------------------------------------------------------------
+backup-node     127.0.0.2:8094        closed    0.02      
+deadservice     127.0.0.1:8099        closed    0.03      
+fileserver      127.0.0.1:8093        open      0.03      
+ghost-host      192.0.2.55:80         error     1051.04   
+intranet        127.0.0.1:8091        open      0.16      
+warehouse-app   127.0.0.1:8092        open      0.03      
+
+Slowest responses:
+  ghost-host       1051.04ms
+  intranet         0.16ms
+  deadservice      0.03ms
+
+Run duration: 1.053s
+Changes since last run: +0 opened, -0 closed, 6 unchanged
+============================================================
+STATUS: 3 OF 6 SERVICE(S) NOT OPEN
+============================================================

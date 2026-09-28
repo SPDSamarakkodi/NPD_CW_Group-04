@@ -1,0 +1,7 @@
+timestamp,hostname,ip_address,service,port,state,response_time_ms,error_detail
+2026-09-20 22:20:44,intranet,127.0.0.1,http,8091,timeout,2014.39,No response within 2s (errno 10035)
+2026-09-20 22:20:44,warehouse-app,127.0.0.1,wms,8092,timeout,2009.17,No response within 2s (errno 10035)
+2026-09-20 22:20:44,fileserver,127.0.0.1,http,8093,timeout,2008.3,No response within 2s (errno 10035)
+2026-09-20 22:20:44,deadservice,127.0.0.1,http,8099,timeout,2007.74,No response within 2s (errno 10035)
+2026-09-20 22:20:44,backup-node,127.0.0.2,http,8094,timeout,2007.58,No response within 2s (errno 10035)
+2026-09-20 22:20:44,ghost-host,192.0.2.55,http,80,timeout,2007.32,No response within 2s (errno 10035)

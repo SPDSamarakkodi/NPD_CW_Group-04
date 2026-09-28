@@ -1,0 +1,65 @@
+{
+  "run_timestamp": "2026-09-28 13:02:53",
+  "results": [
+    {
+      "hostname": "intranet",
+      "ip_address": "127.0.0.1",
+      "service": "http",
+      "port": 8091,
+      "state": "closed",
+      "response_time_ms": 3.93,
+      "timestamp": "2026-09-28 13:02:51",
+      "error_detail": "Connection actively refused"
+    },
+    {
+      "hostname": "warehouse-app",
+      "ip_address": "127.0.0.1",
+      "service": "wms",
+      "port": 8092,
+      "state": "closed",
+      "response_time_ms": 2.44,
+      "timestamp": "2026-09-28 13:02:51",
+      "error_detail": "Connection actively refused"
+    },
+    {
+      "hostname": "fileserver",
+      "ip_address": "127.0.0.1",
+      "service": "http",
+      "port": 8093,
+      "state": "closed",
+      "response_time_ms": 2.4,
+      "timestamp": "2026-09-28 13:02:51",
+      "error_detail": "Connection actively refused"
+    },
+    {
+      "hostname": "deadservice",
+      "ip_address": "127.0.0.1",
+      "service": "http",
+      "port": 8099,
+      "state": "closed",
+      "response_time_ms": 2.74,
+      "timestamp": "2026-09-28 13:02:51",
+      "error_detail": "Connection actively refused"
+    },
+    {
+      "hostname": "backup-node",
+      "ip_address": "127.0.0.2",
+      "service": "http",
+      "port": 8094,
+      "state": "closed",
+      "response_time_ms": 1.61,
+      "timestamp": "2026-09-28 13:02:51",
+      "error_detail": "Connection actively refused"
+    },
+    {
+      "hostname": "ghost-host",
+      "ip_address": "192.0.2.55",
+      "service": "http",
+      "port": 80,
+      "state": "timeout",
+      "response_time_ms": 2003.08,
+      "timestamp": "2026-09-28 13:02:51",
+      "error_detail": "No response within 2s (errno 11)"
+    }
+  ]
+}
