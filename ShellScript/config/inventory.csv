@@ -1,0 +1,14 @@
+hostname,ip_address,service,port,critical
+intranet,127.0.0.1,http,8091,yes
+warehouse-app,127.0.0.1,wms,8092,yes
+fileserver,127.0.0.1,http,8093,no
+deadservice,127.0.0.1,http,8099,no
+backup-node,127.0.0.2,http,8094,no
+ghost-host,192.0.2.55,http,80,no
+
+badrow-fields,127.0.0.1,http
+badport-letters,127.0.0.1,http,8O80,no
+badport-range,127.0.0.1,http,99999,no
+badaddress,192.168.1.256,http,8080,no
+,127.0.0.1,http,8080,no
+trailing-comma,127.0.0.1,http,8080,no,

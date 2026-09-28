@@ -1,0 +1,92 @@
+[2026-09-20 16:18:06] [INFO] NetWatch starting - inventory: /home/claude/netwatch/G_NPD_CW/ShellScript/config/inventory.csv
+[2026-09-20 16:18:06] [INFO] Output directory: /home/claude/netwatch/G_NPD_CW/ShellScript  (timeout=2s, report_only=false)
+[2026-09-20 16:18:06] [INFO] Line 8: skipped (blank line)
+[2026-09-20 16:18:06] [ERROR] Line 9: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 3
+[2026-09-20 16:18:06] [ERROR] Line 10: rejected - field 'port' ('8O80') is not an integer in 1-65535
+[2026-09-20 16:18:06] [ERROR] Line 11: rejected - field 'port' ('99999') is not an integer in 1-65535
+[2026-09-20 16:18:06] [ERROR] Line 12: rejected - field 'ip_address' ('192.168.1.256') is not a valid IPv4 address
+[2026-09-20 16:18:06] [ERROR] Line 13: rejected - field 'hostname' is empty or contains invalid characters
+[2026-09-20 16:18:06] [ERROR] Line 14: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 6
+[2026-09-20 16:18:06] [INFO] Inventory validation complete: 6 valid row(s), 7 rejected row(s)
+[2026-09-20 16:18:06] [INFO] Valid targets loaded: 6
+[2026-09-20 16:18:06] [INFO] Rejected rows: 7
+[2026-09-20 16:18:06] [INFO]   -> intranet (127.0.0.1) reachability=UP rtt=0.045ms service=http:8091 critical=yes
+[2026-09-20 16:18:06] [INFO]   -> warehouse-app (127.0.0.1) reachability=UP rtt=0.045ms service=wms:8092 critical=yes
+[2026-09-20 16:18:06] [INFO]   -> fileserver (127.0.0.1) reachability=UP rtt=0.045ms service=http:8093 critical=no
+[2026-09-20 16:18:06] [INFO]   -> deadservice (127.0.0.1) reachability=UP rtt=0.045ms service=http:8099 critical=no
+[2026-09-20 16:18:06] [INFO]   -> backup-node (127.0.0.2) reachability=UP rtt=0.045ms service=http:8094 critical=no
+[2026-09-20 16:18:06] [ERROR] Probe: ghost-host (192.0.2.55) - unreachable / no reply within 2s
+[2026-09-20 16:18:06] [INFO]   -> ghost-host (192.0.2.55) reachability=DOWN service=http:80 critical=no
+[2026-09-20 16:18:06] [INFO] Invoking Part B: /usr/bin/python3 /home/claude/netwatch/G_NPD_CW/ShellScript/../Python/netwatch.py -i /home/claude/netwatch/G_NPD_CW/ShellScript/config/inventory.csv -t 2 -m concurrent
+[2026-09-20 16:18:08] [INFO] Part B completed: at least one service is not open (exit 3).
+[2026-09-20 16:18:08] [INFO] Merging Part B results from: /home/claude/netwatch/G_NPD_CW/ShellScript/../Python/reports/py_results_20260920_161808.csv
+[2026-09-20 16:18:08] [INFO] Report written: /home/claude/netwatch/G_NPD_CW/ShellScript/reports/netwatch_20260920_161808.csv
+[2026-09-20 16:18:08] [INFO] NetWatch starting - inventory: /home/claude/netwatch/G_NPD_CW/ShellScript/config/inventory.csv
+[2026-09-20 16:18:08] [INFO] Output directory: /home/claude/netwatch/G_NPD_CW/ShellScript  (timeout=2s, report_only=false)
+[2026-09-20 16:18:08] [INFO] Line 8: skipped (blank line)
+[2026-09-20 16:18:08] [ERROR] Line 9: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 3
+[2026-09-20 16:18:08] [ERROR] Line 10: rejected - field 'port' ('8O80') is not an integer in 1-65535
+[2026-09-20 16:18:08] [ERROR] Line 11: rejected - field 'port' ('99999') is not an integer in 1-65535
+[2026-09-20 16:18:08] [ERROR] Line 12: rejected - field 'ip_address' ('192.168.1.256') is not a valid IPv4 address
+[2026-09-20 16:18:08] [ERROR] Line 13: rejected - field 'hostname' is empty or contains invalid characters
+[2026-09-20 16:18:08] [ERROR] Line 14: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 6
+[2026-09-20 16:18:08] [INFO] Inventory validation complete: 6 valid row(s), 7 rejected row(s)
+[2026-09-20 16:18:08] [INFO] Valid targets loaded: 6
+[2026-09-20 16:18:08] [INFO] Rejected rows: 7
+[2026-09-20 16:18:08] [INFO]   -> intranet (127.0.0.1) reachability=UP rtt=0.045ms service=http:8091 critical=yes
+[2026-09-20 16:18:08] [INFO]   -> warehouse-app (127.0.0.1) reachability=UP rtt=0.045ms service=wms:8092 critical=yes
+[2026-09-20 16:18:08] [INFO]   -> fileserver (127.0.0.1) reachability=UP rtt=0.045ms service=http:8093 critical=no
+[2026-09-20 16:18:08] [INFO]   -> deadservice (127.0.0.1) reachability=UP rtt=0.045ms service=http:8099 critical=no
+[2026-09-20 16:18:08] [INFO]   -> backup-node (127.0.0.2) reachability=UP rtt=0.045ms service=http:8094 critical=no
+[2026-09-20 16:18:08] [ERROR] Probe: ghost-host (192.0.2.55) - unreachable / no reply within 2s
+[2026-09-20 16:18:08] [INFO]   -> ghost-host (192.0.2.55) reachability=DOWN service=http:80 critical=no
+[2026-09-20 16:18:08] [INFO] Invoking Part B: /usr/bin/python3 /home/claude/netwatch/G_NPD_CW/ShellScript/../Python/netwatch.py -i /home/claude/netwatch/G_NPD_CW/ShellScript/config/inventory.csv -t 2 -m concurrent
+[2026-09-20 16:18:09] [INFO] Part B completed: at least one service is not open (exit 3).
+[2026-09-20 16:18:09] [INFO] Merging Part B results from: /home/claude/netwatch/G_NPD_CW/ShellScript/../Python/reports/py_results_20260920_161809.csv
+[2026-09-20 16:18:09] [INFO] Report written: /home/claude/netwatch/G_NPD_CW/ShellScript/reports/netwatch_20260920_161809.csv
+[2026-09-20 22:23:44] [INFO] NetWatch starting - inventory: /mnt/c/G_NPD_CW/ShellScript/config/inventory.csv
+[2026-09-20 22:23:44] [INFO] Output directory: /mnt/c/G_NPD_CW/ShellScript  (timeout=2s, report_only=false)
+[2026-09-20 22:23:44] [INFO] Line 8: skipped (blank line)
+[2026-09-20 22:23:44] [ERROR] Line 9: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 3
+[2026-09-20 22:23:44] [ERROR] Line 10: rejected - field 'port' ('8O80') is not an integer in 1-65535
+[2026-09-20 22:23:44] [ERROR] Line 11: rejected - field 'port' ('99999') is not an integer in 1-65535
+[2026-09-20 22:23:44] [ERROR] Line 12: rejected - field 'ip_address' ('192.168.1.256') is not a valid IPv4 address
+[2026-09-20 22:23:44] [ERROR] Line 13: rejected - field 'hostname' is empty or contains invalid characters
+[2026-09-20 22:23:44] [ERROR] Line 14: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 6
+[2026-09-20 22:23:44] [INFO] Inventory validation complete: 6 valid row(s), 7 rejected row(s)
+[2026-09-20 22:23:44] [INFO] Valid targets loaded: 6
+[2026-09-20 22:23:44] [INFO] Rejected rows: 7
+[2026-09-20 22:23:44] [INFO]   -> intranet (127.0.0.1) reachability=UP rtt=0.730ms service=http:8091 critical=yes
+[2026-09-20 22:23:44] [INFO]   -> warehouse-app (127.0.0.1) reachability=UP rtt=0.039ms service=wms:8092 critical=yes
+[2026-09-20 22:23:44] [INFO]   -> fileserver (127.0.0.1) reachability=UP rtt=0.069ms service=http:8093 critical=no
+[2026-09-20 22:23:44] [INFO]   -> deadservice (127.0.0.1) reachability=UP rtt=0.056ms service=http:8099 critical=no
+[2026-09-20 22:23:45] [INFO]   -> backup-node (127.0.0.2) reachability=UP rtt=0.979ms service=http:8094 critical=no
+[2026-09-20 22:23:47] [ERROR] Probe: ghost-host (192.0.2.55) - unreachable / no reply within 2s
+[2026-09-20 22:23:47] [INFO]   -> ghost-host (192.0.2.55) reachability=DOWN service=http:80 critical=no
+[2026-09-20 22:23:47] [INFO] Invoking Part B: /usr/bin/python3 /mnt/c/G_NPD_CW/ShellScript/../Python/netwatch.py -i /mnt/c/G_NPD_CW/ShellScript/config/inventory.csv -t 2 -m concurrent
+[2026-09-20 22:23:49] [INFO] Part B completed: at least one service is not open (exit 3).
+[2026-09-20 22:23:49] [INFO] Merging Part B results from: /mnt/c/G_NPD_CW/ShellScript/../Python/reports/py_results_20260920_222349.csv
+[2026-09-20 22:23:49] [INFO] Report written: /mnt/c/G_NPD_CW/ShellScript/reports/netwatch_20260920_222349.csv
+[2026-09-28 13:02:48] [INFO] NetWatch starting - inventory: /mnt/c/G_NPD_CW/ShellScript/config/inventory.csv
+[2026-09-28 13:02:48] [INFO] Output directory: /mnt/c/G_NPD_CW/ShellScript  (timeout=2s, report_only=false)
+[2026-09-28 13:02:48] [INFO] Line 8: skipped (blank line)
+[2026-09-28 13:02:48] [ERROR] Line 9: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 3
+[2026-09-28 13:02:48] [ERROR] Line 10: rejected - field 'port' ('8O80') is not an integer in 1-65535
+[2026-09-28 13:02:48] [ERROR] Line 11: rejected - field 'port' ('99999') is not an integer in 1-65535
+[2026-09-28 13:02:48] [ERROR] Line 12: rejected - field 'ip_address' ('192.168.1.256') is not a valid IPv4 address
+[2026-09-28 13:02:48] [ERROR] Line 13: rejected - field 'hostname' is empty or contains invalid characters
+[2026-09-28 13:02:48] [ERROR] Line 14: rejected - expected 5 fields (hostname,ip_address,service,port,critical), found 6
+[2026-09-28 13:02:48] [INFO] Inventory validation complete: 6 valid row(s), 7 rejected row(s)
+[2026-09-28 13:02:48] [INFO] Valid targets loaded: 6
+[2026-09-28 13:02:48] [INFO] Rejected rows: 7
+[2026-09-28 13:02:48] [INFO]   -> intranet (127.0.0.1) reachability=UP rtt=0.194ms service=http:8091 critical=yes
+[2026-09-28 13:02:48] [INFO]   -> warehouse-app (127.0.0.1) reachability=UP rtt=0.061ms service=wms:8092 critical=yes
+[2026-09-28 13:02:48] [INFO]   -> fileserver (127.0.0.1) reachability=UP rtt=0.046ms service=http:8093 critical=no
+[2026-09-28 13:02:48] [INFO]   -> deadservice (127.0.0.1) reachability=UP rtt=0.049ms service=http:8099 critical=no
+[2026-09-28 13:02:48] [INFO]   -> backup-node (127.0.0.2) reachability=UP rtt=0.462ms service=http:8094 critical=no
+[2026-09-28 13:02:50] [ERROR] Probe: ghost-host (192.0.2.55) - unreachable / no reply within 2s
+[2026-09-28 13:02:50] [INFO]   -> ghost-host (192.0.2.55) reachability=DOWN service=http:80 critical=no
+[2026-09-28 13:02:51] [INFO] Invoking Part B: /usr/bin/python3 /mnt/c/G_NPD_CW/ShellScript/../Python/netwatch.py -i /mnt/c/G_NPD_CW/ShellScript/config/inventory.csv -t 2 -m concurrent
+[2026-09-28 13:02:53] [INFO] Part B completed: at least one service is not open (exit 3).
+[2026-09-28 13:02:53] [INFO] Merging Part B results from: /mnt/c/G_NPD_CW/ShellScript/../Python/reports/py_results_20260928_130253.csv
+[2026-09-28 13:02:53] [INFO] Report written: /mnt/c/G_NPD_CW/ShellScript/reports/netwatch_20260928_130253.csv
